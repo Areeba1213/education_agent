@@ -40,11 +40,16 @@ config = RunConfig(
 def autism_info_tool(disability_type: str, age: int) -> str:
     if disability_type.lower() == "autism":
         return (
+            f"Autism Spectrum Disorder (ASD) is a developmental condition that affects communication, behavior, and social interaction.\n\n"
             f"For a {age}-year-old child with Autism:\n"
-            "- Use visual schedules\n"
-            "- Break tasks into steps\n"
-            "- Keep routines predictable\n"
-            "- Use AAC tools (like flashcards or pictures)"
+            "- Maintain a consistent daily routine to reduce anxiety.\n"
+            "- Use visual aids and schedules to support understanding.\n"
+            "- Keep language simple and clear; avoid metaphors or sarcasm.\n"
+            "- Encourage communication using AAC tools (like flashcards, pictures, or speech apps).\n"
+            "- Provide a quiet space when the child feels overwhelmed.\n"
+            "- Celebrate small achievements and use positive reinforcement.\n"
+            "- Work with therapists (e.g., speech, occupational) for early intervention.\n\n"
+            "Every child with autism is different. Tailor strategies based on the child's unique strengths and needs."
         )
     elif disability_type.lower() == "dyslexia":
         return (
@@ -60,6 +65,7 @@ def autism_info_tool(disability_type: str, age: int) -> str:
             "- Recommend personalized assessment\n"
             "- Consult a special educator\n"
         )
+
 
 # Create secondary agents
 first_agent = Agent(

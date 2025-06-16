@@ -17,8 +17,6 @@ Thumbs.db
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
-# Streamlit temporary files
-.streamlit/
-
 # Logs
 *.log
+
